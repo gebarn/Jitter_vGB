@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Eggs</h1>
+
+<div id="eggs">
+  <% @eggs.each do |egg| %>
+    <%= render egg %>
+    <p>
+      <%= link_to "Show this egg", egg %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New egg", new_egg_path %>

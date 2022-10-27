@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @egg %>
+
+<div>
+  <%= link_to "Edit this egg", edit_egg_path(@egg) %> |
+  <%= link_to "Back to eggs", eggs_path %>
+
+  <%= button_to "Destroy this egg", @egg, method: :delete %>
+</div>
